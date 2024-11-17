@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #212121;
+    ::selection {
+        color: rgb(255, 255, 255);
+        background: rgb(251, 121, 0);
+      }
+}
+
+.outerrrr{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* align-items: center; */
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: #181818;
+}
+
+a{
+    font-weight: 600;
+    margin: 80px;
+    color: rgb(251, 121, 0);
+    text-decoration: none;
+}
+
+li{
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+
+.outer_calculator{
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    background-color: rgb(186, 186, 186);
+    border: solid;
+    border-color:#454545;
+    height: 650px;
+    width: 520px;
+    border-radius: 12px;
+}
+
+.screen{
+    border: solid;
+    background-color: rgb(255, 149, 68);
+    border-color: #212121;
+    width: 475px;
+    height: 116px;
+    border-radius: 12px;
+    margin-left: 20px;
+    margin: 20px;
+}
+
+.zero{
+    text-align: center;
+    margin-left: 85%;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+/* .screen_1{
+    border: solid;
+    border-color: white;
+    width: 550px;
+    height: 70px;
+    border-radius: 12px;
+    margin-left: 20px;
+    margin: 20px;
+} */
+
+.table_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table{
+    font-size: 28px;
+    font-weight: 500;
+    height: 460px;
+    width: 550px;
+    border-width: 2px;
+    border-spacing: 20px;
+    /* border-collapse: collapse; */
+}
+
+td{
+    background-color: rgb(255, 223, 198);
+    height: 55px;
+    border: solid;
+    border-color:#212121;
+    /* border-width: 2px; */
+    padding: 6px;
+    border-radius: 12px;
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
