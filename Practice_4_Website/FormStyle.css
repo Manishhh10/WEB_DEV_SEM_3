@@ -29,6 +29,7 @@ body{
 }
 
 a{
+    font-size: 18px;
     font-weight: 600;
     margin: 80px;
     color: rgb(251, 121, 0);
