@@ -1,4 +1,5 @@
 body{
+    height: 200vh;
     margin: 0;
     padding: 0;
     background-color: #212121;
@@ -69,4 +70,46 @@ a:hover{
     color: rgb(255, 255, 255);
     text-align:center;
     font-size: 40px;
+}
+
+
+
+
+.sidebar{
+    position: fixed;
+    top: 150px;
+    left: 20px;
+    border-radius: 18px;
+    background-color: rgb(251, 121, 0);
+    width: 65px;
+    height: 250px;
+}
+
+.inner_sidebar{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home{
+    width: 35px;
+    height: 35px;
+}
+
+.search{
+    width: 28px;
+    height: 28px;
+}
+
+.user{
+    width: 40px;
+    height: 40px;
+}
+
+.insta{
+    width: 30px;
+    height: 30px;
 }
