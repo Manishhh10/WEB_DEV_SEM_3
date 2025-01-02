@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: solid;
+            border-width: 1px;
+            border-radius: 8px;
+            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .card h3 {
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #555;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container" id="cardContainer">
+        <p id="noDataMessage" class="no-data" style="display: none;">No data found in local storage.</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cardContainer = document.getElementById("cardContainer");
+            const noDataMessage = document.getElementById("noDataMessage");
+
+            const userDetails = localStorage.getItem("userDetails");
+
+            if (userDetails) {
+                const user = JSON.parse(userDetails);
+
+                const card = document.createElement("div");
+                card.classList.add("card");
+                card.innerHTML = `
+                    <h3>${user.fullname}</h3>
+                    <hr>
+                    <p><strong>Email:</strong> ${user.email}</p>
+                    <hr>
+                    <p><strong>Username:</strong> ${user.username}</p>
+                    <hr>
+                    <p><strong>Password:</strong> ${user.password}</p>
+                `;
+
+                cardContainer.appendChild(card);
+            } else {
+                noDataMessage.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>

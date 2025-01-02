@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    let names = ["zoe","adam","dan"]
+    // console.log(names.toString());
+    // console.log(names.join(" - "));
+
+    let nums  = [1,2,3];
+    let nums2 = [4,5,6];
+    let concatArr = nums.concat(nums2);
+    // console.log(concatArr);
+
+    let arr = ["zoe","adam","dan"];
+    arr.splice(1,0,"alice","amy");
+    // console.log(arr);
+
+    let arr2 = ["danny","joe","amy"];
+    // console.log(arr2.slice(0,2));
+
+    const account =[
+        {
+            name:"qwerty",
+            class:"10",
+            roll_no:"22"
+        },
+        {
+            name:"uiop",
+            class:"9",
+            roll_no:"2"
+        },
+        {
+            name:"asdf",
+            class:"10",
+            roll_no:"17"
+        },
+        {
+            name:"zxcv",
+            class:"9",
+            roll_no:"33"
+        },
+        {
+            name:"mnbv",
+            class:"8",
+            roll_no:"7"
+        }
+    ]
+
+    account.forEach(n => console.log(n.name));
+    
+    
+    
+    
+    const newObj = {
+        name:"qwerty",
+        class:"10",
+        roll_no:"22"
+    }
+    // console.log(newObj);
+    // console.log(Object.keys(newObj));
+    // console.log(Object.values(newObj));
+    // console.log(Object.entries(newObj));
+    // console.log(Object.assign(newObj,{dob:"2006-08-12"}));
+    
+</script>
+</html>

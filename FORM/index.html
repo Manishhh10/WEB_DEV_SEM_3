@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .outer{
+            height: 100vh;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+    </style>
+</head>
+<body>
+    <Form>
+        <div class="outer">
+            <h1>FORM</h1>
+            <div>
+                Product Name:
+                <input class="Name" type="text">
+            </div>
+            <div>
+                Product Code:
+                <input class="Code" type="number">
+            </div>
+            <div>
+                Product Type:
+                <input class="Type" type="text">
+            </div>
+            <div>
+                Product Quantity:
+                <input class="Quantity" type="number">
+            </div>
+
+            <button class="submit">Submit</button>
+        </div>
+    </Form>
+</body>
+<script>
+
+    
+const submit = document.querySelector('.submit');
+const data = [];
+
+submit.addEventListener('click', (e) => {
+    e.preventDefault()
+    // e.stopPropagation()
+    const code = document.querySelector('.Name').value;
+    const type = document.querySelector('.Type').value;
+    const quantity = document.querySelector('.Quantity').value;
+    const name = document.querySelector('.Name').value;
+
+    const entry = { name, type, code, quantity };
+    data.push(entry);
+
+    console.log(data);
+});
+
+</script>
+</html>

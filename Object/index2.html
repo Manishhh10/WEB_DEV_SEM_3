@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const newArr = [
+        {
+        name:"qwerty",
+        class:"12",
+        age:"21",
+        roll_no:"22",
+        address:"kathmandu",
+        contact:"9824657483"},
+        {
+        name:"uiop",
+        class:"12",
+        age:"18",
+        roll_no:"2",
+        address:"kathmandu",
+        contact:"9824657483"},
+        {
+        name:"asdf",
+        class:"12",
+        age:"20",
+        roll_no:"17",
+        address:"kathmandu",
+        contact:"9824657483"},
+        {
+        name:"mnbv",
+        class:"6",
+        age:"14",
+        roll_no:"7",
+        address:"kathmandu",
+        contact:"9824657483"},
+        {
+        name:"mnop",
+        class:"8",
+        age:"15",
+        roll_no:"7",
+        address:"kathmandu",
+        contact:"9824657483"}
+    ]
+
+    const result = newArr.filter(checkAge);
+
+    function checkAge(person) {
+        return (person.age) >= 20 && (person.age) < 30;
+    }
+
+    // for (let j = 0; j < newArr.length; j++) {
+    //     console.log(newArr[j].name);
+    // }
+
+    // console.log(result);
+    
+
+    for (let i = 0; i < result.length; i++) {
+        console.log(result[i].name);   
+    }
+
+    // console.log(result[0].name);
+    
+
+    
+</script>
+</html>

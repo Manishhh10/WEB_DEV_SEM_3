@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: #c7c7c7; */
+}
+
+.outer_most{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.outer{
+    /* min-height: 400px; */
+    background-color: rgb(189, 255, 154);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 28%;
+    height: 100%;
+    border: solid 1px;
+    border-color: black;
+}
+
+.row_1{
+    height: 95%;
+    background-color: rgb(189, 255, 154);
+    /* margin-top: 2%; */
+    /* border: solid; */
+    /* border-color: black; */
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.username{
+    /* background: none; */
+    border: 0;
+    outline: 0;
+    height: 20px;
+    width: 50%;
+    border: solid;
+    font-size: .9rem;
+    margin-top: 2%;
+    padding: 8px 15px;
+}
+
+.email{
+    border: 0;
+    outline: 0;
+    height: 20px;
+    width: 50%;
+    border: solid;
+    font-size: .9rem;
+    margin-top: 2%;
+    padding: 8px 15px;
+    margin-bottom: 2%;
+}
+
+.science{
+    border: 0;
+    outline: 0;
+    height: 20px;
+    width: 50%;
+    border: solid;
+    font-size: .9rem;
+    margin-top: 2%;
+    padding: 8px 15px;
+    margin-bottom: 2%;
+}
+
+.math{
+    border: 0;
+    outline: 0;
+    height: 20px;
+    width: 50%;
+    border: solid;
+    font-size: .9rem;
+    margin-top: 2%;
+    padding: 8px 15px;
+    margin-bottom: 2%;
+}
+
+.physics{
+    border: 0;
+    outline: 0;
+    height: 20px;
+    width: 50%;
+    border: solid;
+    font-size: .9rem;
+    margin-top: 2%;
+    padding: 8px 15px;
+    margin-bottom: 2%;
+}
+
+.computer{
+    border: 0;
+    outline: 0;
+    height: 20px;
+    width: 50%;
+    border: solid;
+    font-size: .9rem;
+    margin-top: 2%;
+    padding: 8px 15px;
+    margin-bottom: 2%;
+}
+
+.chemistry{
+    border: 0;
+    outline: 0;
+    height: 20px;
+    width: 50%;
+    border: solid;
+    font-size: .9rem;
+    margin-top: 2%;
+    padding: 8px 15px;
+    margin-bottom: 2%;
+}
+
+
+.button{
+  background-color: rgb(189, 255, 154);
+  margin-top: 20px;
+  font-size: 17px;
+  padding: 12px 30px;
+  cursor: pointer;
+  border-radius: 12px;
+  border: none;
+  border: solid;
+  color: black;
+  font-weight: 600;
+  /* box-shadow: ; */
+}

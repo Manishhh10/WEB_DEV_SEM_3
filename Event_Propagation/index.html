@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        button{
+            padding: 12px;
+            border: none;
+            background-color: rgb(0, 113, 19);
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Propagation</h1>
+    <div class="parent">Parent
+        <button class="child_button">Child</button>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    const child = document.querySelector('.child_button')
+    parent.addEventListener('click',()=>{
+        console.log("Parent Clicked!");
+        
+    })
+
+    child.addEventListener('click',(e)=>{
+        console.log("Child Clicked!");
+        e.stopPropagation()
+    })
+</script>
+</html>

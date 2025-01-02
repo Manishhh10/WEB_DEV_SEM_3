@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #222;
+        }
+
+        table {
+            border: solid;
+            
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            border: solid;
+            border-radius: 8px;
+        }
+
+        th, td {
+            border: solid;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            font-weight: normal;
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div id="table-container">
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+        <p id="noDataMessage" class="no-data" style="display: none;">No data found in local storage.</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tableBody = document.getElementById("tableBody");
+            const noDataMessage = document.getElementById("noDataMessage");
+
+
+            const userDetails = localStorage.getItem("userDetails");
+
+            if (userDetails) {
+                const user = JSON.parse(userDetails);
+
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${user.fullname}</td>
+                    <td>${user.email}</td>
+                    <td>${user.username}</td>
+                    <td>${user.password}</td>
+                `;
+
+                tableBody.appendChild(row);
+            } else {
+                noDataMessage.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>

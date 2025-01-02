@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        button{
+            padding: 12px;
+            border: none;
+            background-color: rgb(0, 113, 19);
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter</h1>
+    <button>Buttton 1</button>
+    <button>Buttton 2</button>
+    <button>Buttton 3</button>
+    <button>Buttton 4</button>
+    <button>Buttton 5</button>
+    <h2 class="count">Counter:</h2>
+    <button class="reset">Reset</button>
+</body>
+<script>
+    const button = document.querySelectorAll('button')
+    const count = document.querySelector('.count')
+    const reset = document.querySelector('.reset')
+    let counter = 0;
+    reset.addEventListener('click',()=>{
+        counter.textContent = "Counter:"
+    })
+    button.forEach((button)=>{
+        button.addEventListener('click',()=>{
+            counter++;
+            count.textContent = `Counter: ${counter}`
+        })
+    })
+
+</script>
+</html>
